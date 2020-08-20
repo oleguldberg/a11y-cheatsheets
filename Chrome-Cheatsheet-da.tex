@@ -1,0 +1,65 @@
+\documentclass[a4paper, landscape, 11pt]{scrartcl} 
+\usepackage[utf8]{inputenc} 
+\usepackage[danish]{babel} 
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage[landscape]{geometry}
+\usepackage{textcomp}
+\usepackage{palatino}
+\usepackage{amssymb}
+\usepackage{fontawesome}
+\usepackage[os=win]{menukeys}
+\renewmenumacro{\keys}[+]{shadowedroundedkeys}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks
+}
+
+\renewcommand{\dots}{\ \dotfill{}\ } % Fills in the right amount of dots
+\newcommand{\command}[2]{#1~\dotfill{}~#2\\} % Custom command for adding a shorcut
+
+\begin{document}
+
+\section*{Google Chrome Snydeark (version-$\alpha$) - ole@omgwtf.dk}
+
+\hrulefill{}
+
+\begin{multicols}{2}
+
+\subsection*{Sider}
+\command{Skriv webadresse eller søgning}{\keys{\ctrl + l}}
+\command{Gå en side frem}{\keys{\Alt + \arrowkeyleft}}
+\command{Gå en side tilbage}{\keys{\Alt + \arrowkeyright}}
+
+\subsection*{Vinduer og faner}
+\command{Ny vindue}{\keys{\ctrl + n} }
+\command{Ny InCognito-vindue}{\keys{\ctrl + \shift + n} }
+\command{Ny fane}{\keys{\ctrl + t} }
+\command{Åben sidst lukkede fane}{\keys{\ctrl + \shift + t} }
+\command{Luk fane}{\keys{\ctrl + w} }
+\command{Luk vindue}{\keys{\ctrl + \shift + w} }
+\command{Flyt til næste fane}{\keys{\ctrl + \tab}}
+\command{Flyt til forrige fane}{\keys{\ctrl + \shift + \tab}}
+\command{Flyt til fanenummer 1 ... 8}{\keys{\ctrl + 1} ... \keys{8}}
+\command{Flyt til sidste åbne fane}{\keys{\ctrl + 9}}
+
+\subsection*{Bogmærker}
+\command{Åben bogmærkemanager}{\keys{\ctrl + \shift + o}}
+\command{Tilføj bogmærke}{\keys{\ctrl + d}}
+
+\subsection*{Chrome-menuen}
+\command{Åben Chrome-menuen}{\keys{\Alt + f}}
+\command{Åben download-siden}{\keys{\ctrl + j}}
+\command{Åben historik}{\keys{\ctrl + h}}
+\command{Sletning af Chromes data}{\keys{\ctrl + \shift + \del}}
+\command{Åben Chrome opgavevisning}{\keys{\shift + \esc}}
+\command{Åben udvikler værktøj}{\keys{\ctrl + \shift + i}}
+
+\subsection*{Indstillinger}
+\command{Åben indstillinger}{\keys{\Alt + f} \keys{i}}
+
+\end{multicols}
+
+\hrulefill{}
+
+\end{document}

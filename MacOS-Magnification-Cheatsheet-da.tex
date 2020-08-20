@@ -1,0 +1,79 @@
+\documentclass[a4paper, landscape, 11pt]{scrartcl} 
+\usepackage[utf8]{inputenc} 
+\usepackage[danish]{babel} 
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage[landscape]{geometry}
+\usepackage{textcomp}
+\usepackage{palatino}
+\usepackage{amssymb}
+\usepackage{menukeys}
+\renewmenumacro{\keys}[+]{shadowedroundedkeys}
+
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks
+}
+
+\renewcommand{\dots}{\ \dotfill{}\ } % Fills in the right amount of dots
+\newcommand{\command}[2]{#1~\dotfill{}~#2\\} % Custom command for adding a shorcut
+
+% FontAwesome
+\usepackage{fontawesome}
+
+% Remove indentation of first line i paragraph
+\setlength{\parindent}{0in}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\section*{\faApple  MacOS Svagsyn-snydeark (version-$\alpha$) - ole@omgwtf.dk}
+
+\hrulefill{}
+
+\begin{multicols}{2}
+
+\subsection*{Indstillinger}
+\command{Åben tilgængelighedsindstillinger}{\keys{fn + \Alt + \cmd  + F5}}
+
+\subsection*{Systemindstillinger} 
+Åben applikationen \faCog \textbf{\textit{Systemindstillinger }}\\ 
+\command{Indstil forstørrelse:}{\menu[,]{\faUniversalAccess Tilgængelighed, Zoom}}
+\command{Indstil farveforbedringer:}{\menu[,]{\faUniversalAccess Tilgængelighed, Skærm}}
+\command{Indstil diktering:}{\menu[,]{\faKeyboardO Tastatur, Diktering}}
+\command{Indstil Siri:}{\menu[,]{\faCircleO Siri}}
+
+\subsection*{Forstørrelse}
+Forstørrelse kan også fungere som på iOS med dobbelt tap med \textit{tre fingre} for at aktivere forstørrelse og dobbelt tap med \textit{tre fingre} og op eller ned for at zoome ud eller ind. \\
+
+\command{Zoom til og fra}{\keys{\Alt + \cmd + 8}}
+\command{Zoom ind}{\keys{\Alt + \cmd + 0}}
+\command{Zoom ind}{\keys{\Alt + \cmd + {-}}}
+\command{Zoom ind med trackpad}{\keys{\ctrl} + $\upuparrows$ }
+\command{Zoom ud med trackpad}{\keys{\ctrl} + $\downdownarrows$ }
+
+\subsection*{Oplæsning}
+\command{Læs markede tekst}{\keys{\Alt + esc}}
+
+\subsection*{Diktering, søgning og Siri}
+\command{Start  og stop diktering}{\keys{fn + fn}}
+\command{Start Siri}{\keys{\cmd + \SPACE}}
+\command{Start Spotlight-søgefunktionen}{\keys{\cmd + \SPACE}}
+
+\subsection*{Arbejde med applikationer}
+\command{Skift mellem applikationer}{\keys{\cmd + \tab}}
+\command{Luk vindue (eller fane)}{\keys{\cmd + w}}
+\command{Afslut applikation}{\keys{\cmd + q}}
+
+\subsection*{Virtuelle skriveborde}
+\command{Åben applikation i fuldskærm}{\keys{\ctrl + \cmd + f}}
+\command{Næste virtuelle skrivebord}{\keys{\ctrl + $\rightarrow$}}
+\command{Forrige virtuelle skrivebord}{\keys{\ctrl + $\leftarrow$}}
+\end{multicols}
+
+%\subsection*{Brugeroverfladen på MacOS}
+%\command{Lås skærm}{\keys{\ctrl + \cmd + q}}
+
+%\hrulefill{}
+
+\end{document}

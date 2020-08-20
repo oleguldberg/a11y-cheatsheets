@@ -1,0 +1,110 @@
+\documentclass[a4paper, landscape, 11pt]{scrartcl} 
+\usepackage[utf8]{inputenc} 
+\usepackage[danish]{babel} 
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage[landscape]{geometry}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{palatino}
+\usepackage{amssymb}
+\usepackage[os=win]{menukeys}
+\renewmenumacro{\keys}[+]{shadowedroundedkeys}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks
+}
+
+\renewcommand{\dots}{\ \dotfill{}\ } % Fills in the right amount of dots
+\newcommand{\command}[2]{#1~\dotfill{}~#2\\} % Custom command for adding a shorcut
+
+\begin{document}
+
+\section*{Windows \emph{Oplæser} snydeark (version-$\beta$) - ole@omgwtf.dk}
+
+\hrulefill{}
+
+\begin{multicols}{2}
+
+\subsection*{Narrator-keys}
+Du bruger Narrator-tasten til at arbejde med Oplæser. 
+\\ \\
+\command{Narrator-tasten (Na)}{\keys{Capslock} og (eller) \keys{Insert}}
+
+\subsection*{Starte og stoppe Windows Oplæser}
+\command{Start og stop \emph{Oplæser}}{\keys{\faWindows + \ctrl + \enter}}
+
+\subsection*{Oplæser hjælp}
+\command{Start \emph{Oplæser} kommandoliste}{\keys{Na + F1}}
+\command{Start \emph{Oplæser} Inputhjælp}{\keys{Na + 1}}
+% \command{Start Narrator Quickstart}{\keys{Na + something}}
+
+\subsection*{Indstillinger}
+\command{Åben systemindstillinger}{\keys{\faWindows + i}}
+\command{Åben indstillinger for øget tilgængelighed}{\keys{\faWindows + u}}
+\command{Åben \emph{Oplæser}-indstillinger}{\keys{\faWindows + \ctrl + n}}
+
+
+\subsection*{Tilpas Oplæser stemmeindstillinger}
+\command{Hurtigere tale}{\keys{Na + {+}}}
+\command{Langsommere tale}{\keys{Na + {-}}}
+\command{Indstil tale-detajlegrad (verbositet)}{\keys{Na + v}}
+
+\subsection*{Oplæsningskommandoer}
+\command{Læs linje}{\keys{Na + \arrowkeyup}}
+\command{Læs herfra}{\keys{Na + \arrowkeydown}}
+\command{Læs herfra}{\keys{Na + r}}
+\command{Læs titellinie}{\keys{Na + t}}
+\command{Læs vindue}{\keys{Na + w}}
+\command{Læs fokus}{\keys{Na + \tab}}
+\command{Læs tekstattributter}{\keys{Na + f}}
+\command{Stop tale}{\keys{\ctrl}}
+
+\subsection*{Grundlæggende navigation}
+\command{Flyt til næste element}{\keys{Na + \arrowkeyright}}
+\command{Flyt til forrige element}{\keys{Na + \arrowkeyleft}}
+\command{Aktiver element}{\keys{Na + \return}}
+
+\subsection*{Brugerfladenavigation}
+\command{Åben Windows-menu}{\keys{\faWindows}}
+\command{Åben Opgavevisning}{\keys{\faWindows + \tab}}
+\command{Opret nyt virtuelt skrivebord}{\keys{\faWindows + \ctrl + d}}
+\command{Luk virtuelt skrivebord}{\keys{\faWindows + \ctrl + F4}}
+\command{Gå til systembakke}{\keys{\faWindows + b}}
+\command{Gå til skrivebord}{\keys{\faWindows + d}}
+\command{Åben handlingscenter}{\keys{\faWindows + a}}
+\command{Søg på sin computer}{\keys{\faWindows + s}}
+\command{Søg med Cortana}{\keys{\faWindows + c}}
+
+\subsection*{Brug scanningstilstand}
+\command{Start og stop scanning}{\keys{Na + \SPACE}}
+\command{Få et side overblik}{\keys{Na + s}}
+\command{Hop til næste overskrift}{\keys{h}}
+\command{Hop til forrige overskrift}{\keys{\shift + h}}
+\command{Hop til næste link}{\keys{k}}
+\command{Hop til forrige link}{\keys{\shift + k}}
+\command{Hop til næste knap}{\keys{b}}
+\command{Hop til forrige knap}{\keys{\shift + b}}
+\command{Hop til næste edit-felt}{\keys{e}}
+\command{Hop til forrige edit-felt}{\keys{\shift + e}}
+\command{Hop til næste grafik}{\keys{g}}
+\command{Hop til forrige grafik}{\keys{\shift + g}}
+\command{Beskriv grafik}{\keys{Na + \ctrl + d}}
+
+\subsection*{Lister}
+\command{Liste over landmærker}{\keys{Na + F5}}
+\command{Liste over overskrifter}{\keys{Na + F6}}
+\command{Liste over links}{\keys{Na + F7}}
+
+\subsection*{Forstørrelsesglas}
+\command{\emph{Forstørrelsesglas}-indstillinger}{\keys{\ctrl + \faWindows + m}}
+\command{Zoom ind}{\keys{\faWindows + {+}}}
+\command{Zoom ud}{\keys{\faWindows + {-}}}
+\command{Afslut \emph{Forstørrelsesglas}}{\keys{\faWindows + \esc}}
+\command{Inverter farver}{\keys{\ctrl + \Alt + i}}
+\command{Skift Zoom-tilstand}{\keys{\ctrl + \Alt + m}}
+\end{multicols}
+
+\hrulefill{}
+
+\end{document}

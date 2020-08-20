@@ -1,0 +1,113 @@
+\documentclass[a4paper, landscape, 11pt]{scrartcl} 
+\usepackage[utf8]{inputenc} 
+\usepackage[danish]{babel} 
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage[landscape]{geometry}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{palatino}
+\usepackage{amssymb}
+\usepackage[os=win]{menukeys}
+\renewmenumacro{\keys}[+]{shadowedroundedkeys}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks
+}
+
+\renewcommand{\dots}{\ \dotfill{}\ } % Fills in the right amount of dots
+\newcommand{\command}[2]{#1~\dotfill{}~#2\\} % Custom command for adding a shorcut
+
+\begin{document}
+
+\section*{NVDA (Non-Visual Desktop Access Snydeark (version-$\beta$) - ole@omgwtf.dk}
+
+\hrulefill{}
+
+\begin{multicols}{2}
+
+\subsection*{NVDA-tast}
+NVDA bruger NVDA-tasten til at styre skærmlæseren. \\ 
+\command{NVDA-tast (NVDA)}{\keys{Capslock} og (eller) \keys{Insert}} \\
+Dette dokument benytter Desktop-layout som er standard-layout. Hvis du ønsker kan du benytte Laptop-layout, men tastatur-genvejene vil så være anderledes.
+
+\subsection*{Starte og stoppe NVDA}
+\command{Start NVDA}{\keys{\ctrl + \Alt + n}}
+\command{Stoppe NVDA}{\keys{NVDA + q}}
+\command{Stop tale}{\keys{\ctrl}}
+\command{Pause og genstart tale}{\keys{\shift}}
+
+\subsection*{NVDA Help}
+\command{Start og stop NVDA Input-hjælp}{\keys{NVDA + 1}}
+\command{Åben NVDA-menu}{\keys{NVDA + n}}
+
+\subsection*{NVDA indstillinger}
+\command{Generel NVDA-indstillinger}{\keys{NVDA + \ctrl + g}}
+\command{NVDA keyboard-indstillinger}{\keys{NVDA + \ctrl + k}}
+
+\subsection*{Windows indstillinger}
+\command{Åben indstillinger}{\keys{\faWindows + i}}
+\command{Åben Tilgængelighedsindstillinger}{\keys{\faWindows + u}}
+
+\subsection*{Indstillinger Stemme-indstillinger}
+\command{Find Stemme-indstilling}{\keys{NVDA + \ctrl + \arrowkeyleft} or \keys{\arrowkeyright}}
+\command{Ændre Stemme-indstillinger}{\keys{NVDA + \ctrl + \arrowkeyup} or \keys{\arrowkeydown}}
+\command{Åben Synthiser-indstillinger}{\keys{NVDA + \ctrl + s}}
+\command{Åben Stemme-indstillingsmenu}{\keys{NVDA + \ctrl + v}}
+
+\subsection*{Læse kommandoer}
+\command{Læs linie}{\keys{NVDA + \arrowkeyup}}
+\command{Læs element fra nuværende position}{\keys{NVDA + \arrowkeydown}}
+\command{Læs fokus}{\keys{NVDA + \tab}}
+\command{Læs vindestitel}{\keys{NVDA + t}}
+\command{Læs vindue}{\keys{NVDA + b}}
+\command{Læs tekst-attributter}{\keys{NVDA + f}}
+
+\subsection*{Objekt navigation}
+\command{Flyt til næste element}{\keys{NVDA + \arrowkeyright}}
+\command{Flyt til forring element}{\keys{NVDA + \arrowkeyleft}}
+\command{Inteager element}{\keys{NVDA + \arrowkeydown}}
+\command{Stop interaktion med element}{\keys{NVDA  + \arrowkeyup}}
+\command{Aktiver element}{\keys{NVDA + \SPACE}}
+
+\subsection*{Navigation i brugerfladen}
+\command{Gå til systembakken}{\keys{\faWindows + b}}
+\command{Åben aktivitetscenteret}{\keys{\faWindows + a}}
+\command{Gå til skrivebord}{\keys{\faWindows + d}}
+\command{Åben filhåndteringen}{\keys{\faWindows + e}}
+
+\subsection*{Brug navigationstilstand}
+\command{Start og stop navigationstilstand}{\keys{NVDA + \SPACE}}
+\command{Hop til næste overskrift}{\keys{h}}
+\command{Hop til forrige overskrift}{\keys{\shift + h}}
+\command{Hop til næste link}{\keys{k}}
+\command{Hop til forringe link}{\keys{\shift + k}}
+\command{Hop til næste besøgt link}{\keys{v}}
+\command{Hop til forringe besøgt link}{\keys{\shift + v}}
+\command{Hop til næste ubesøgt link}{\keys{u}}
+\command{Hop til forringe ubesøgt link}{\keys{\shift + u}}
+\command{Hop til næste knap}{\keys{b}}
+\command{Hop til forringe knap}{\keys{\shift + b}}
+\command{Hop til næste edit-felt}{\keys{e}}
+\command{Hop til forrige edit-felt}{\keys{\shift + e}}
+\command{Hop til næste grafik}{\keys{g}}
+\command{Hop til forrige grafik}{\keys{\shift + g}}
+\command{Hop til næste stavefejl}{\keys{w}}
+\command{Hop til forrige stavefejl}{\keys{\shift + w}}
+\command{OCR-behandel grafik}{\keys{NVDA+ r}}
+
+\subsection*{Gennemsyn af tekst}
+Man kan gennemse tekst uden af flytte tekstmarkøren - der skal benyttes de nummerisk taster. \\ \\
+\command{Forrige, aktuelle, næste linie}{\keys{7}, \keys{8}, \keys{9}}
+\command{Forrige, aktuelle, næste ord}{\keys{4}, \keys{5}, \keys{6}}
+\command{Forrige, aktuelle, næste karkater}{\keys{1}, \keys{2}, \keys{3}}
+
+\subsection*{Lister}
+For at åbne elementlisten der giver et overblik hvilke navigationsmuligheder. \\ \\
+\command{Åben elementlisten}{\keys{NVDA + F7}}
+
+\end{multicols}
+
+\hrulefill{}
+
+\end{document}

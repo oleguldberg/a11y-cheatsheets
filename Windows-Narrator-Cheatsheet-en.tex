@@ -1,0 +1,111 @@
+\documentclass[a4paper, landscape, 11pt]{scrartcl} 
+\usepackage[utf8]{inputenc} 
+\usepackage[danish]{babel} 
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage[landscape]{geometry}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{palatino}
+\usepackage{amssymb}
+\usepackage[os=win]{menukeys}
+\renewmenumacro{\keys}[+]{shadowedroundedkeys}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks
+}
+
+\renewcommand{\dots}{\ \dotfill{}\ } % Fills in the right amount of dots
+\newcommand{\command}[2]{#1~\dotfill{}~#2\\} % Custom command for adding a shorcut
+
+\begin{document}
+
+\section*{Windows Narrator Cheatsheet (version-$\beta$) - ole@omgwtf.dk}
+
+\hrulefill{}
+
+\begin{multicols}{2}
+
+\subsection*{Narrator-keys}
+Narrator uses the Narrator-key for working with the screenreader. 
+\\ \\
+\command{Narrator-key (Na)}{\keys{Capslock} and (or) \keys{Insert}}
+
+\subsection*{Starting and stopping Windows Narrator}
+\command{Start and stop \emph{Narrator}}{\keys{\faWindows + \ctrl + \enter}}
+
+\subsection*{Narrator Help}
+\command{Start Narrator Command list}{\keys{Na + F1}}
+\command{Start Narrator Input-help}{\keys{Na + 1}}
+% \command{Start Narrator Quickstart}{\keys{Na + something}}
+
+\subsection*{Settings}
+\command{Open Settings}{\keys{\faWindows + i}}
+\command{Open Accessibility Settings}{\keys{\faWindows + u}}
+\command{Open Narrator Settings}{\keys{\faWindows + \ctrl + n}}
+
+
+\subsection*{Adjust Voice-settings}
+\command{Faster speech}{\keys{Na + {+}}}
+\command{Slower speech}{\keys{Na + {-}}}
+\command{Adjust verbosity}{\keys{Na + v}}
+
+\subsection*{Reading commands}
+\command{Read line}{\keys{Na + \arrowkeyup}}
+\command{Read from current position}{\keys{Na + \arrowkeydown}}
+\command{Read from current position}{\keys{Na + r}}
+\command{Read titleline}{\keys{Na + t}}
+\command{Read window}{\keys{Na + w}}
+\command{Read focus}{\keys{Na + \tab}}
+\command{Read text-attributes}{\keys{Na + f}}
+\command{Stop speech}{\keys{\ctrl}}
+
+\subsection*{Basic navigation}
+\command{Move to next element}{\keys{Na + \arrowkeyright}}
+\command{Move to previous element}{\keys{Na + \arrowkeyleft}}
+\command{Activateelement}{\keys{Na + \return}}
+
+\subsection*{Navigating the user-interface}
+\command{Open Windows-menu}{\keys{\faWindows}}
+\command{Open TaskView}{\keys{\faWindows + \tab}}
+\command{Create new virtual desktop}{\keys{\faWindows + \ctrl + d}}
+\command{Delete virtual desktop}{\keys{\faWindows + \ctrl + F4}}
+\command{Goto Notifications}{\keys{\faWindows + b}}
+\command{Goto Desktop}{\keys{\faWindows + d}}
+\command{Open Activities}{\keys{\faWindows + a}}
+\command{Search your computer}{\keys{\faWindows + s}}
+\command{Search with Cortana}{\keys{\faWindows + c}}
+
+\subsection*{Using Scanmode}
+\command{Start and stop scanmode}{\keys{Na + \SPACE}}
+\command{Get a page-summary}{\keys{Na + s}}
+\command{Jump to next heading}{\keys{h}}
+\command{Jump to previous heading}{\keys{\shift + h}}
+\command{Jump to next link}{\keys{k}}
+\command{Jump to previous link}{\keys{\shift + k}}
+\command{Jump to next button}{\keys{b}}
+\command{Jump to previous button}{\keys{\shift + b}}
+\command{Jump to next editfield}{\keys{e}}
+\command{Jump to previous editfield}{\keys{\shift + e}}
+\command{Jump to next graphic}{\keys{g}}
+\command{Jump to previous graphic}{\keys{\shift + g}}
+\command{Describe graphic}{\keys{Na + \ctrl + d}}
+
+\subsection*{Lists}
+\command{List of landmarks}{\keys{Na + F5}}
+\command{List of headings}{\keys{Na + F6}}
+\command{List of links}{\keys{Na + F7}}
+
+\subsection*{Magnifyer}
+\command{Magnifyer settings}{\keys{\ctrl + \faWindows + m}}
+\command{Zoom in}{\keys{\faWindows + {+}}}
+\command{Zoom out}{\keys{\faWindows + {-}}}
+\command{Quit magnifyer}{\keys{\faWindows + \esc}}
+\command{Invert colours}{\keys{\ctrl + \Alt + i}}
+\command{Change Zoom-mode}{\keys{\ctrl + \Alt + m}}
+
+\end{multicols}
+
+\hrulefill{}
+
+\end{document}

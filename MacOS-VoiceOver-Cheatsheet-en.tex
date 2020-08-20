@@ -1,0 +1,117 @@
+\documentclass[a4paper, landscape, 11pt]{scrartcl} 
+\usepackage[utf8]{inputenc} 
+\usepackage[danish]{babel} 
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage[landscape]{geometry}
+\usepackage{textcomp}
+\usepackage{palatino}
+\usepackage{amssymb}
+\usepackage{menukeys}
+\renewmenumacro{\keys}[+]{shadowedroundedkeys}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks
+}
+
+\renewcommand{\dots}{\ \dotfill{}\ } % Fills in the right amount of dots
+\newcommand{\command}[2]{#1~\dotfill{}~#2\\} % Custom command for adding a shorcut
+
+
+\begin{document}
+%\pagenumbering{gobble}
+
+\section*{MacOS VoiceOver Cheatsheet (version-$\alpha$) - ole@omgwtf.dk}
+
+\hrulefill{}
+
+\begin{multicols}{2}
+
+\subsection*{VoiceOver-keys}
+VoiceOver on MacOS uses the VoiceOver-keys for working with VoiceOver.
+\\ \\
+\command{VoiceOver-keys (VO)}{\keys{\capslock} and (or) \keys{\ctrl + \Alt}}
+\\
+Your can change this behaviour in the VoiceOver Utility.
+
+\subsection*{VoiceOver Help}
+\command{Start VoiceOver help}{\keys{VO + h}}
+\command{Start VoiceOver help}{\keys{VO + h}}
+\command{Start VoiceOver keyboard-help}{\keys{VO + h + h}}
+\command{Start VoiceOver Quickstart}{\keys{VO + \cmd + fn + 8}}
+
+\subsection*{Starting and stopping VoiceOver}
+\command{Start VoiceOver with}{\keys{\cmd + F5}}
+\command{Start VoiceOver (Touchbar)}{\keys{\cmd + {TouchID-button}} three times}
+
+\subsection*{Setting up VoiceOver}
+Open your \textbf{\textit{System Preferences}}. \\ 
+You can find the VoiceOver settings: \menu[,]{Accessibility,VoiceOver}.
+\\ \\
+\command{VoiceOver Utility}{\keys{VO + fn + 8}}
+\command{Turn screencurtain on or off}{\keys{VO + \shift + fn + F11}}
+
+\subsection*{Adjust Voice-settings}
+\command{Select Voice-setting}{\keys{VO + \cmd + \shift} and \keys{\arrowkeyleft} or \keys{\arrowkeyright}}
+\command{Set Voice-setting}{\keys{VO + \cmd + \shift} and \keys{\arrowkeyup} or \keys{\arrowkeydown}}
+\command{Adjust verbosity}{\keys{VO + v}}
+
+\subsection*{Reading commands}
+\command{Read element from current position}{\keys{VO + a}}
+\command{Read element from beginning}{\keys{VO + b}}
+\command{Read line}{\keys{VO + l}}
+\command{Read text-attributes}{\keys{VO + t}}
+\command{Stop speech}{\keys{\ctrl}}
+
+\subsection*{Using the Rotor}
+\command{Set the rotor}{\keys{VO + \cmd} and \keys{\arrowkeyleft} or \keys{\arrowkeyright}}
+\command{Navigate using the rotor-setting}{\keys{VO + \cmd} and \keys{\arrowkeydown} or \keys{\arrowkeyup}}
+
+\subsection*{Basic navigation}
+\command{Move to next element}{\keys{VO + \arrowkeyright}}
+\command{Move to previous element}{\keys{VO + \arrowkeyleft}}
+\command{Interact with element}{\keys{VO + \shift + \arrowkeydown}}
+\command{Stop interaction with element}{\keys{VO + \shift + \arrowkeyup}}
+\command{Activate element}{\keys{VO + \SPACE}}
+\command{Go to first element}{\keys{VO + \cmd + fn + \arrowkeyleft}}
+\command{Go to last element}{\keys{VO + \cmd + fn + \arrowkeyright}}
+
+\subsection*{Navigating the user-interface}
+\command{Goto menubar}{\keys{VO + m}}
+\command{Goto statusmenu}{\keys{VO + m + m}}
+\command{Goto Dock}{\keys{VO + d}}
+\command{Goto Desktop}{\keys{VO + \shift + d}}
+\command{Open element i Finder}{\keys{VO + o}}
+
+\subsection*{Using Safari}
+\command{Start Web-rotor}{\keys{VO + u}}
+\command{Jump to next heading}{\keys{VO + \cmd + h}}
+\command{Jump to previous heading}{\keys{VO + \cmd + \shift + h}}
+\command{Jump to next link}{\keys{VO + \cmd + l}}
+\command{Jump to previous link}{\keys{VO + \cmd + \shift + h }}
+\command{Jump to next plaintext}{\keys{VO + \cmd + p}}
+\command{Jump to previous plaintext}{\keys{VO + \cmd + \shift + p }}
+
+\subsection*{Quick navigation}
+\command{Start and stop QuickNavigation}{\keys{\arrowkeyleft + \arrowkeyright}}
+\command{Next element}{\keys{\arrowkeyright}}
+\command{Previous element}{\keys{\arrowkeyleft}}
+\command{Interact with element}{\keys{\arrowkeyright + \arrowkeydown}}
+\command{Stop interaction}{\keys{\arrowkeyleft + \arrowkeydown}}
+\command{Set the Rotor}{\keys{\arrowkeyleft + \arrowkeyup} or \keys{\arrowkeyright + \arrowkeyup}}
+\command{Navigate using Rotor-setting}{\keys{\arrowkeydown} or \keys{\arrowkeyup}}
+
+\subsection*{Choosers}
+\command{Application Chooser}{\keys{VO + fn + 1 + 1}}
+\command{Window Chooser}{\keys{VO + fn + 2 + 2}}
+\command{Item Chooser}{\keys{VO + i}}
+
+\subsection*{Application}
+\command{Start Spotlight-launcher}{\keys{\cmd + \SPACE}}
+\command{Switch Applications}{\keys{\cmd + \tab}}
+
+\end{multicols}
+
+\hrulefill{}
+
+\end{document}

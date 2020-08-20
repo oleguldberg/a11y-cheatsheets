@@ -1,0 +1,90 @@
+\documentclass[a4paper, landscape, 11pt]{scrartcl} 
+\usepackage[utf8]{inputenc} 
+\usepackage[danish]{babel} 
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage[landscape]{geometry}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{palatino}
+\usepackage{amssymb}
+\usepackage[os=win]{menukeys}
+\renewmenumacro{\keys}[+]{shadowedroundedkeys}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks
+}
+
+\renewcommand{\dots}{\ \dotfill{}\ } % Fills in the right amount of dots
+\newcommand{\command}[2]{#1~\dotfill{}~#2\\} % Custom command for adding a shorcut
+
+% FontAwesome
+\usepackage{fontawesome}
+
+% Remove indentation of first line i paragraph
+\setlength{\parindent}{0in}
+
+\begin{document}
+\pagenumbering{gobble}
+\section*{Windows Svagsyn Snydeark (version-$\alpha$) - ole@omgwtf.dk}
+
+\hrulefill{}
+
+\begin{multicols}{2}
+
+\subsection*{Indstillinger}
+\command{Åben Windowsindstillinger}{\keys{\faWindows + i}}
+\command{Åben indstillinger for tilgængelighed}{\keys{\faWindows + u}}
+\command{Åben indstillinger for forstørrelsesglas}{\keys{\faWindows + \ctrl + m}}
+
+\subsection*{Forstørrelsesglas}
+\command{Zoom in}{\keys{\faWindows + {+}}}
+\command{Zoom ud}{\keys{\faWindows + {-}}}
+\command{Zoom ud og ind med mus}{\keys{\ctrl + \Alt} og scroll \faArrowsV}
+\command{Afslut forstørrelsesglas}{\keys{\faWindows + \esc}}
+
+\subsection*{Visningstyper}
+Det er tre visningstyper: fuldskærm, linse og forankret.\\ \\
+\command{Skift forstørrelsestyper}{\keys{\ctrl + \Alt + m}}
+\command{Skift til fuldskærmsvisning}{\keys{\ctrl + \Alt + f}}
+\command{Skift til linsevisning}{\keys{\ctrl + \Alt + l}}
+\command{Skift til forankretvisning}{\keys{\ctrl + \Alt + d}}
+
+
+\subsection*{Farveforbedringer}
+\command{Inverter farver med forstørrelsesglas}{\keys{\ctrl + \Alt + i}}
+\command{Farvefiltre til og fra}{\keys{\faWindows + \ctrl + c}}
+\command{Højkontrast tema til og fra}{\keys{\shift + \Alt + PrtScn}}
+
+\subsection*{Oplæsning med \faEdge dge}
+\command{Start oplæsning i Edge}{\keys{\ctrl + \shift+ u}}
+
+\subsection*{Windows brugerflade}
+\command{Åben Windows-menuen}{\keys{\faWindows}}
+\command{Skift mellem åbne vinduer}{\keys{\Alt + \tab}}
+\command{Åben opgavevisning}{\keys{\faWindows + \tab}}
+\command{Opret nyt virtuelt skrivebord}{\keys{\faWindows + \ctrl + d}}
+\command{Nedlæg virtuelt skrivebord}{\keys{\faWindows + \ctrl + F4}}
+\command{Open systemnotifikationer}{\keys{\faWindows + b}}
+\command{Gå til skrivebordet}{\keys{\faWindows + d}}
+\command{Åben aktiviteter}{\keys{\faWindows + a}}
+\command{Søg computeren}{\keys{\faWindows + s}}
+
+\subsection*{Placering af vinduer}
+Bevægelse af vinduer er en dynamisk progress - du kan blive nød til at gentage et tastetryk for den ønskede placering. \\ \\
+\command{Bevæg et vindue mod højre}{\keys{\faWindows + \faArrowRight}}
+\command{Bevæg et vindue mod venstre}{\keys{\faWindows + \faArrowLeft}}
+\command{Gør vindue større eller bevæg op}{\keys{\faWindows + \faArrowUp}}
+\command{Gør vindue mindre eller bevæg ned}{\keys{\faWindows + \faArrowDown}}
+
+\subsection*{Oplæsning med forstørrelsesglas}
+Oplæsning med forstørrelsesglas er på nuværende tidspunkt kun muligt med Windows-insider version. \\ \\
+\command{Start og stop oplæsning}{\keys{\ctrl + \Alt + \enter}}
+\command{Start oplæsning med mus}{\keys{\ctrl + \Alt + venstre-klik}}
+\command{Læs næste sætning}{\keys{\ctrl + \Alt + h}}
+\command{Læs forrrige sætning}{\keys{\ctrl + \Alt + k}}
+\end{multicols}
+
+\hrulefill{}
+
+\end{document}

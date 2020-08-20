@@ -1,0 +1,107 @@
+\documentclass[a4paper, landscape, 11pt]{scrartcl} 
+\usepackage[utf8]{inputenc} 
+\usepackage[danish]{babel} 
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage[landscape]{geometry}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{palatino}
+\usepackage{amssymb}
+\usepackage[os=win]{menukeys}
+\renewmenumacro{\keys}[+]{shadowedroundedkeys}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks
+}
+
+\renewcommand{\dots}{\ \dotfill{}\ } % Fills in the right amount of dots
+\newcommand{\command}[2]{#1~\dotfill{}~#2\\} % Custom command for adding a shorcut
+
+\begin{document}
+
+\section*{NVDA (Non-Visual Desktop Access Cheatsheet (version-$\beta$) - ole@omgwtf.dk}
+
+\hrulefill{}
+
+\begin{multicols}{2}
+
+\subsection*{NVDA-keys}
+NVDA uses the NVDA-key to control with the screenreader. \\ 
+\command{NVDA-key (NVDA)}{\keys{Capslock} and (or) \keys{Insert}} \\
+This document describes NVDA's Desktop-layout which is default. If you wish you can use a Laptop-layout, but the keystrokes wil be different.
+
+\subsection*{Starting and stopping NVDA}
+\command{Start NVDA}{\keys{\ctrl + \Alt + n}}
+\command{Quit NVDA}{\keys{NVDA + q}}
+\command{Stop speech}{\keys{\ctrl}}
+\command{Pause and restart speech}{\keys{\shift}}
+
+\subsection*{NVDA Help}
+\command{Start and stop NVDA Input-help}{\keys{NVDA + 1}}
+\command{Open NVDA-menu}{\keys{NVDA + n}}
+
+\subsection*{NVDA Settings}
+\command{General NVDA-settings}{\keys{NVDA + \ctrl + g}}
+\command{NVDA keyboard-settings}{\keys{NVDA + \ctrl + k}}
+
+\subsection*{Windows Settings}
+\command{Open Settings}{\keys{\faWindows + i}}
+\command{Open Accessibility Settings}{\keys{\faWindows + u}}
+
+\subsection*{Adjust Voice-settings}
+\command{Find Voice-setting}{\keys{NVDA + \ctrl + \arrowkeyleft} or \keys{\arrowkeyright}}
+\command{Change Voice-setting}{\keys{NVDA + \ctrl + \arrowkeyup} or \keys{\arrowkeydown}}
+\command{Open Synthiser-settings}{\keys{NVDA + \ctrl + s}}
+\command{Open Voice-settings}{\keys{NVDA + \ctrl + v}}
+
+\subsection*{Reading commands}
+\command{Read line}{\keys{NVDA + \arrowkeyup}}
+\command{Read element from current position}{\keys{NVDA + \arrowkeydown}}
+\command{Read focus}{\keys{NVDA + \tab}}
+\command{Read window-title}{\keys{NVDA + t}}
+\command{Read window}{\keys{NVDA + b}}
+\command{Read text-attributes}{\keys{NVDA + f}}
+
+\subsection*{Object navigation}
+\command{Move to next element}{\keys{NVDA + \arrowkeyright}}
+\command{Move to previous element}{\keys{NVDA + \arrowkeyleft}}
+\command{Interact with element}{\keys{NVDA + \arrowkeydown}}
+\command{Stop interaction with element}{\keys{NVDA  + \arrowkeyup}}
+\command{Activate element}{\keys{NVDA + \SPACE}}
+
+\subsection*{Navigating the user-interface}
+\command{Goto Notifications}{\keys{\faWindows + b}}
+\command{Open Activities}{\keys{\faWindows + a}}
+\command{Goto Desktop}{\keys{\faWindows + d}}
+\command{Open File explorer}{\keys{\faWindows + e}}
+
+\subsection*{Using Navigation-mode}
+\command{Start and stop navigationmode}{\keys{NVDA + \SPACE}}
+\command{Jump to next heading}{\keys{h}}
+\command{Jump to previous heading}{\keys{\shift + h}}
+\command{Jump to next link}{\keys{l}}
+\command{Jump to previous link}{\keys{\shift + h}}
+\command{Jump to next button}{\keys{b}}
+\command{Jump to previous button}{\keys{\shift + b}}
+\command{Jump to next editfield}{\keys{e}}
+\command{Jump to previous editfield}{\keys{\shift + e}}
+\command{Jump to next graphic}{\keys{g}}
+\command{Jump to previous graphic}{\keys{\shift + g}}
+\command{Describe graphic}{\keys{Na + \ctrl + d}}
+
+\subsection*{Gennemsyn af tekst}
+You can review text without moving the textcaret - use the numeric keys. \\ \\
+\command{Previous, current, next line}{\keys{7}, \keys{8}, \keys{9}}
+\command{Previous, current, next word}{\keys{4}, \keys{5}, \keys{6}}
+\command{Previous, current, next character}{\keys{1}, \keys{2}, \keys{3}}
+
+\subsection*{Lists}
+To open a list of the different  elements that you can navigate. \\ \\
+\command{Open elementlist}{\keys{NVDA + F7}}
+
+\end{multicols}
+
+\hrulefill{}
+
+\end{document}
