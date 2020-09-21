@@ -8,6 +8,6 @@ CheatSheet to make it easier to get started with different accessibility-tools.
 - MacOS-VoiceOver (english) - done.
 - NVDA (danish and english) - mostly done.
 - Windows Narrator (english) - done.
-- Windows Magnifyer (danish) - mostly done.
+- Windows Magnifyer (danish) - done.
 - iOS-VoiceOver (english) - done.
 - iOS-VoiceOver (and magnification) (Danish) - done.
