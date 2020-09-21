@@ -10,3 +10,4 @@ CheatSheet to make it easier to get started with different accessibility-tools.
 - Windows Narrator (english) - done.
 - Windows Magnifyer (danish) - mostly done.
 - iOS-VoiceOver (english) - done.
+- iOS-VoiceOver (and magnification) (Danish) - done.
